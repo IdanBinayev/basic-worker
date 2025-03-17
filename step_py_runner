@@ -1,0 +1,3 @@
+#!/bin/bash
+export MPLCONFIGDIR=/srv/scripter/$1 
+python3 step.py "$@"
