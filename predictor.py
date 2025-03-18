@@ -3,7 +3,16 @@ import numpy as np
 from rdkit import Chem
 from rdkit.Chem import AllChem
 
-print("started wiht the predictor")
+
+import os
+
+# Print the current working directory
+print("Current Path:", os.getcwd())
+files = os.listdir()
+print("Files in current directory:", files)
+
+print("started with the predictor")
+
 
 # Load the pretrained model and encoder
 xgb_model = joblib.load("xgb_model.pkl")
