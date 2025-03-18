@@ -3,6 +3,8 @@ import numpy as np
 from rdkit import Chem
 from rdkit.Chem import AllChem
 
+print("started wiht the predictor")
+
 # Load the pretrained model and encoder
 xgb_model = joblib.load("xgb_model.pkl")
 onehot_encoder = joblib.load("onehot_encoder.pkl")
