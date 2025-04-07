@@ -15,8 +15,8 @@ print("started with the predictor")
 
 
 # Load the pretrained model and encoder
-xgb_model = joblib.load("xgb_model.pkl")
-onehot_encoder = joblib.load("onehot_encoder.pkl")
+xgb_model = joblib.load("~/srv/scripter/xgb_model.pkl")
+onehot_encoder = joblib.load("~/srv/scripter/onehot_encoder.pkl")
 
 def generate_ecfp(molecule, radius=2, bits=1024):
     """Generate ECFP fingerprint for a given molecule."""
