@@ -5,7 +5,6 @@ FROM python:latest
 WORKDIR /tmp
 
 # Copy the current directory contents into the container at /usr/src/app
-COPY xgb_model.pkl .
 COPY . .
 
 
